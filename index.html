@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>Edisonemm | Frontend Mentor | Expenses chart component</title>
+
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-  My balance
-  $921.48
+  <main class="chart--container">
+    <header class="chart--header">
+      <span class="chart--header__balance chart--balance">
+        <h1 class="chart--balance__text">My balance</h1>
+        <p class="chart--balance__value">$921.8</p>
+      </span>
+      <img class="chart--header__logo" src="./images/logo.svg" alt="logo">
+    </header>
 
-  Spending - Last 7 days
+    <article class="chart">
+      <h2 class="chart__heading">Spending - Last 7 days</h2>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+      <ul class="chart__day__container">
+        <li class="chart__day">mon
+          <span class="chart__day__bar"></span>
+        </li>
+        <li class="chart__day">tue
+          <span class="chart__day__bar"></span>
+        </li>
+        <li class="chart__day">wed
+          <span class="chart__day__bar"></span>
+        </li>
+        <li class="chart__day">thu
+          <span class="chart__day__bar"></span>
+        </li>
+        <li class="chart__day">fri
+          <span class="chart__day__bar"></span>
+        </li>
+        <li class="chart__day">sat
+          <span class="chart__day__bar"></span>
+        </li>
+        <li class="chart__day">sun
+          <span class="chart__day__bar"></span>
+        </li>
+      </ul>
 
-  Total this month
-  $478.33
+      <section class="chart__stats">
+        <span class="chart__stats__total">
+          Total this month
+          <b class="chart__stats__total__vaue">$478.33</b>
+        </span>
+        <span class="chart__stats__percent">
+          <b class="chart__stats__percent">+2.4%</b>
+          from last month
+        </span>
+      </section>
+    </article>
+  </main>
 
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
+
 </html>
