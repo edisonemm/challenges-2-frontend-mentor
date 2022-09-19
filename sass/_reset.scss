@@ -3,15 +3,20 @@
 }
 
 :root{
-    --Soft-red: hsl(10, 79%, 65%);
-    --Cyan: hsl(186, 34%, 60%);
-    --Dark-brown: hsl(25, 47%, 15%);
-    --Medium-brown: hsl(28, 10%, 53%);
-    --Cream: hsl(27, 66%, 92%);
-    --Very-pale-orange: hsl(33, 100%, 98%);
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
 }
 
 body {
+    display: grid;place-items: center;gap: 20px;
     min-height: 100vh;
     font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--cream);
 }
+
+ul { list-style: none;}

@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
-
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+    
     <title>Edisonemm | Frontend Mentor | Expenses chart component</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
     <style>
         .attribution { font-size: 11px; text-align: center; }
         .attribution a { color: hsl(228, 45%, 44%); }
     </style>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 </head>
 
 <body>
@@ -23,7 +27,7 @@
         <header class="chart--header">
             <span class="chart--header__balance chart--balance">
                 <h1 class="chart--balance__text">My balance</h1>
-                <p class="chart--balance__value">$921.8</p>
+                <p class="chart--balance__value">$921.48</p>
             </span>
             <img class="chart--header__logo" src="./images/logo.svg" alt="logo">
         </header>
@@ -31,27 +35,27 @@
         <article class="chart">
             <h2 class="chart__heading">Spending - Last 7 days</h2>
 
-            <ul class="chart__day__container" days>
-                <li class="chart__day">mon
-                    <span class="chart__day__bar"></span>
+            <ul class="chart__day--container" days>
+                <li class="chart__day"><span class="chart__day__bar"></span>
+                    <span class="chart__day__text">mon</span>
                 </li>
-                <li class="chart__day">tue
-                    <span class="chart__day__bar"></span>
+                <li class="chart__day"><span class="chart__day__bar"></span>
+                    <span class="chart__day__text">tue</span>
                 </li>
-                <li class="chart__day">wed
-                    <span class="chart__day__bar"></span>
+                <li class="chart__day"><span class="chart__day__bar"></span>
+                    <span class="chart__day__text">wed</span>
                 </li>
-                <li class="chart__day">thu
-                    <span class="chart__day__bar"></span>
+                <li class="chart__day"><span class="chart__day__bar"></span>
+                    <span class="chart__day__text">thu</span>
                 </li>
-                <li class="chart__day">fri
-                    <span class="chart__day__bar"></span>
+                <li class="chart__day"><span class="chart__day__bar"></span>
+                    <span class="chart__day__text">fri</span>
                 </li>
-                <li class="chart__day">sat
-                    <span class="chart__day__bar"></span>
+                <li class="chart__day"><span class="chart__day__bar"></span>
+                    <span class="chart__day__text">sat</span>
                 </li>
-                <li class="chart__day">sun
-                    <span class="chart__day__bar"></span>
+                <li class="chart__day"><span class="chart__day__bar"></span>
+                    <span class="chart__day__text">sun</span>
                 </li>
             </ul>
 
