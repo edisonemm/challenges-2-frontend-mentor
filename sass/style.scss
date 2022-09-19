@@ -31,12 +31,12 @@
         }
         &:hover {
             .chart__day__bar { filter: brightness(1.2);}
-            &::before{ transition: opacity .4s; opacity: 1; }
+            &::before{ transition: opacity .4s; opacity: 1; z-index: +1;}
         }
 
         &--container {
             display: grid;
-            margin: 40px 0;
+            margin: 40px 0 60px 0;
             grid-template-columns: repeat(7, 1fr);gap: 15px;
             min-height: 180px;
             align-items: end;
@@ -80,7 +80,7 @@
             margin-top: 10px;
         }
         &__text {
-            font-size: 100%;
+            font-size: 16px;
             font-weight: normal;
             color: var(--cream);
         }
@@ -88,9 +88,10 @@
 
 
     @media (max-width: 376px){
-        %section{
-            padding: 25px 20px;
-        }
+        &, &__header{ padding: 25px 20px;}
+        &__heading{ font-size: 24px; }
+        &__day--container{ gap: 10px;}
+        &__stats__total__value{font-size: 32px;}
     }
 }
 
